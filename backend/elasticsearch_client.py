@@ -5,7 +5,7 @@ class ElasticsearchClient:
     def __init__(self):
         self.es = Elasticsearch(
             ['https://localhost:9200'],
-            http_auth=('elastic', 'NdRt+g_Cc+PAxT9_9QB2'),
+            http_auth=('elastic', 'NdRt+g_Cc+PAxT9_9QB2'),  # Replace with your username and password
             verify_certs=False
         )
         if self.es.ping():
